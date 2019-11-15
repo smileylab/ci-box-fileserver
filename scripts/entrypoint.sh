@@ -29,7 +29,7 @@ ssl_enable=NO
 
 mkdir /var/run/vsftpd
 mkdir /var/run/vsftpd/empty
-touch ${ROOT}/empty.txt
+ln -s /root/healthcheck/ ${ROOT}/healthcheck
 
 chown root:nogroup -R ${ROOT}
 chmod -R a+rw ${ROOT}/

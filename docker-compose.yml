@@ -9,11 +9,9 @@ services:
       args:
         http_port: 80
         ftp_port: 21
-        root: "/wwwroot"
+        root_path: "/wwwroot"
         extra_packages: ""
     restart: always
     ports:
       - "8888:80"    # http
       - "2121:21"    # ftp
-    volumes:
-      - ./data:/wwwroot
